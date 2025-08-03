@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+:root {
+  --primary-color: #8B0000; /* Vermelho escuro (carmesim) */
+  --secondary-color: #DC143C; /* Carmesim mais claro */
+  --text-color: #FFFFFF;
+  --dark-bg: #1E1E1E;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+
+/* Banner Section */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../images/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
+.banner button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Course Content Section */
+#course-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.module {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.module span {
+  font-weight: bold;
+}
+
+/* Transform World Section */
+#transform-world {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../images/transform-world.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Professional Challenges Section */
+#professional-challenges {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#professional-challenges img {
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+#professional-challenges p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer .dio-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
